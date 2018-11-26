@@ -27,6 +27,6 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/Recaptcha.java" target-dir="src/com/packtpub" />
+        <source-file src="src/android/IonicRecaptcha.java" target-dir="src/com/packtpub" />
     </platform>
 </plugin>
