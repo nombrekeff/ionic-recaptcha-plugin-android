@@ -1,12 +1,11 @@
 
-var exec = require('cordova/exec');
+const exec = require('cordova/exec');
+const PLUGIN_NAME = 'IonicRecaptcha';
 
-var PLUGIN_NAME = 'MiPlugin';
-
-var MiPlugin = {
-  saludo: function (name, successCallback, errorCallback){
-        exec(successCallback, errorCallback, PLUGIN_NAME, "saludar", [name]);
+const IonicRecaptcha = {
+  verify: function (key, successCallback, errorCallback) {
+    exec(successCallback, errorCallback, PLUGIN_NAME, "verify", [key]);
   }
 };
 
-module.exports = MiPlugin;
+module.exports = IonicRecaptcha;

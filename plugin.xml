@@ -1,46 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="mi-plugin"
-    version="1.0.0">
-    <name>Cordova Plugin Template</name>
-    <description></description>
+        id="cordova-plugin-recaptcha" version="1.0.2">
+    <engines>
+      <engine name="cordova-android" version=">=6.0.0" />
+    </engines>
+    <name>Ionic Recaptcha</name>
+    <description>A cordova plugin for the reCAPTCHA Android API</description>
+    <author>Nombrekeff</author>
     <license>MIT</license>
-    <keywords></keywords>
-    <repo>https://github.com/thecouk/ionic-cordova-plugin-template.git</repo>
+    <keywords>recaptcha</keywords>
+    <info>
+        You may need to install the __Google Repository__ from the `SDK Tools` section using the
+        Android SDK manager.
+    </info>
     
+    <js-module src="www/plugin.js" name="recaptcha">
+        <clobbers target="plugins.recaptcha" />
+    </js-module>
 
-    <!-- android -->
     <platform name="android">
-      <js-module src="www/plugin.js" name="plugin">
-        <runs/>
-
-        <!-- Este es el nombre por el cual se accedera el plugin -->
-        <clobbers target="MiPlugin" />
-      </js-module>
-      <config-file target="res/xml/config.xml" parent="/*">
-        <feature name="MiPlugin">
-          <param name="android-package" value="com.example.MiPlugin" />
-          <param name="onload" value="true" />
-        </feature>
-      </config-file>
-
-      <source-file src="src/android/com/example/MiPlugin.java" target-dir="src/com/example/" />
-    </platform>
-
-    <!-- ios -->
-    <platform name="ios">
-        <js-module src="www/plugin.js" name="plugin">
-            <runs/>
-            <clobbers target="MiPlugin" />
-        </js-module>
+        <framework src="com.google.android.gms:play-services-safetynet:+" />
+        
         <config-file target="config.xml" parent="/*">
-            <feature name="MiPlugin">
-                <param name="ios-package" value="MiPlugin" onload="true" />
+            <feature name="IonicRecaptcha">
+                <param name="android-package" value="com.keff.IonicRecaptcha"/>
             </feature>
         </config-file>
 
-        <header-file src="src/ios/MiPlugin.h" />
-        <source-file src="src/ios/MiPlugin.m" />
+        <source-file src="www/android/Recaptcha.java" target-dir="src/com/packtpub" />
     </platform>
 </plugin>
