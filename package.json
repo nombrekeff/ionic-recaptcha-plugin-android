@@ -1,6 +1,6 @@
 {
   "name": "ionic-recaptcha-android",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "cordova": {
     "id": "com.keff.IonicRecaptcha",
     "platforms": [
