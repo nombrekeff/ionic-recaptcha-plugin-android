@@ -7,5 +7,9 @@
       "android"
     ]
   },
-  "description": "Plantilla base para crear un Plugin personalizado"
+  "repository": {
+    "type": "vcs",
+    "url": "https://github.com/nombrekeff/ionic-recaptcha-plugin-android"
+  },
+  "description": "This is a cordova plugin to perform Google reCAPTCHA verify on Android using the android SafetyNet package."
 }
