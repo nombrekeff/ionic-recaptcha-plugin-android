@@ -1,10 +1,10 @@
 
-const exec = require('cordova/exec');
+const cordova = require('cordova');
 const PLUGIN_NAME = 'IonicRecaptcha';
 
 const IonicRecaptcha = {
   verify: function (key, successCallback, errorCallback) {
-    exec(successCallback, errorCallback, PLUGIN_NAME, "verify", [key]);
+    return cordova.exec(successCallback, errorCallback, PLUGIN_NAME, "verify", [key]);
   }
 };
 

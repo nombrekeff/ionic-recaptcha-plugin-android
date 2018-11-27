@@ -1,11 +1,10 @@
 {
-  "name": "cordova-plugin-plantilla",
+  "name": "cordova-plugin-recaptcha",
   "version": "1.0.0",
   "cordova": {
-    "id": "cordova-plugin-plantilla",
+    "id": "com.keff.IonicRecaptcha",
     "platforms": [
-      "android",
-      "ios"
+      "android"
     ]
   },
   "description": "Plantilla base para crear un Plugin personalizado"

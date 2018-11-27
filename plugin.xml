@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="cordova-plugin-recaptcha" version="1.0.2">
-    <engines>
-      <engine name="cordova-android" version=">=6.0.0" />
-    </engines>
+        id="com.keff.IonicRecaptcha" version="1.0.0">
+
     <name>Ionic Recaptcha</name>
-    <description>A cordova plugin for the reCAPTCHA Android API</description>
-    <author>Nombrekeff</author>
-    <license>MIT</license>
-    <keywords>recaptcha</keywords>
-    <info>
-        You may need to install the __Google Repository__ from the `SDK Tools` section using the
-        Android SDK manager.
-    </info>
-    
+
     <js-module src="www/plugin.js" name="recaptcha">
-        <clobbers target="plugins.recaptcha" />
+        <clobbers target="IonicRecaptcha" />
     </js-module>
 
     <platform name="android">
         <framework src="com.google.android.gms:play-services-safetynet:+" />
+
+        <source-file src="src/android/IonicRecaptcha.java" target-dir="src/com/keff" />
         
         <config-file target="config.xml" parent="/*">
             <feature name="IonicRecaptcha">
@@ -27,6 +19,5 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/IonicRecaptcha.java" target-dir="src/com/packtpub" />
     </platform>
 </plugin>
