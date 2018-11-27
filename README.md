@@ -7,6 +7,8 @@ We needed to use recaptcha in our app, but using web recaptcha it does not work 
 And didn't find any plugin for Angular2+ so this comes to fill that hole. 
 
 ## Links
+* Get a Key: https://www.google.com/recaptcha/admin
+  * Must generate a Android key
 * Safetynet Recaptcha Docs: https://developer.android.com/training/safetynet/recaptcha
 
 ## Installation
