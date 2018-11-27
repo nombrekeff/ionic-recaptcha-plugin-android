@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         id="com.keff.IonicRecaptcha" version="1.0.0">
 
-    <name>Ionic Recaptcha</name>
+    <name>Ionic Recaptcha Android</name>
 
     <js-module src="www/plugin.js" name="recaptcha">
         <clobbers target="IonicRecaptcha" />

@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-recaptcha",
+  "name": "ionic-recaptcha-android",
   "version": "1.0.0",
   "cordova": {
     "id": "com.keff.IonicRecaptcha",
