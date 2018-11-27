@@ -2,13 +2,16 @@
 This is a cordova plugin to perform Google reCAPTCHA verify on Android using the android SafetyNet package.
 > Based on [cordova-plugin-recaptcha](https://bitbucket.org/packt-internal/cordova-plugin-recaptcha) by [@pack-internal](https://bitbucket.org/packt-internal)
 
+## Motivation
+We needed to use recaptcha in our app, but using web recaptcha it does not work in Ionic/Cordova, as it does not have a domain name.  
+And didn't find any plugin for Angular2+ so this comes to fill that hole. 
 
 ## Links
 * Safetynet Recaptcha Docs: https://developer.android.com/training/safetynet/recaptcha
 
 ## Installation
 ```
-cordova plugin add git@bitbucket.org:manoloedge/ionic-recaptcha-android.git
+cordova plugin add ionic-recaptcha-android
 ```
 
 <!-- __note:__ The plan is to publish this to the @packt npm org, however cordova-cli doesn't currently 
