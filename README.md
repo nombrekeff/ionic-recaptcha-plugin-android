@@ -1,4 +1,7 @@
 # Ionic 3 Recaptcha Plugin (Android)
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/nombrekeff/ionic-recaptcha-plugin-android.svg)](https://greenkeeper.io/)
+
 This is a cordova plugin to perform Google reCAPTCHA verify on Android using the android SafetyNet package.
 > Based on [cordova-plugin-recaptcha](https://bitbucket.org/packt-internal/cordova-plugin-recaptcha) by [@pack-internal](https://bitbucket.org/packt-internal)
 
